@@ -11,6 +11,10 @@ class superMarker {
     this.clients.splice(this.clients.indexOf(client), 1);
   }
 
+  kickTheFirstOfTheList() {
+    this.clients.shift();
+  }
+
   isEmpty() {
     return this.clients.length === 0;
   }
